@@ -1,0 +1,71 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+  }
+
+[data-theme="dark"] {
+    --background-color: #242424;
+    --text-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Source Code Pro', monospace;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 900px; /* or 950px */
+}
+
+li::marker {
+    font-size: 25px;
+    color: #ed4d3f;
+}
+
+.bi, a{
+    color: #ed4d3f;
+    text-decoration: none;
+}
+.bi {
+    font-size: 30px;
+    padding-right: 10px;
+}
+.bi:hover, a:hover {
+    color: #bb1209;
+}
+
+
+.accordion-button::after {
+    content: none;
+}
+.accordion-item {
+    border: none !important;
+}
+.accordion-header > button:before {
+    float: left;
+    content: "[-]";
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.accordion-header > button.collapsed:before {
+    float: right;
+    content: "[+]"
+}
+.accordion-header .accordion-button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+    border: 0;
+}
+.accordion-body {
+    background-color: var(--background-color);
+}
+
+
+
